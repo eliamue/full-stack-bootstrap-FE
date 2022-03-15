@@ -1,8 +1,8 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import "../styles/Nav.css";
-import { Link } from 'react-router-dom';
-
+// import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
 
 export default class Nav extends React.Component {
@@ -14,9 +14,9 @@ export default class Nav extends React.Component {
 
     return (
       <Menu width="25vmin">
-        <Link id="home" className="menu-item" to={"/"}>Home</Link>
-        <Link id="list" className="menu-item" to={"/list"}>List</Link>
-        <Link id="about" className="menu-item" to={"/about"}>About</Link>
+        <HashLink id="home" className="menu-item" to={"/"}>Home</HashLink>
+        <HashLink id="list" className="menu-item" to={"/list"}>List</HashLink>
+        <HashLink id="about" className="menu-item" to={"/about"}>About</HashLink>
       </Menu>
     );
   }
