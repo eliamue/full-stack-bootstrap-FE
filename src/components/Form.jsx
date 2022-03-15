@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Form() {
   return (
-    <div>Form</div>
+    <div className="form-container">Form</div>
   )
 }

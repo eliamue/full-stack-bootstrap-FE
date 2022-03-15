@@ -2,8 +2,8 @@ import React from "react";
 import List from "../components/items/List";
 import { useAllItems } from '../hooks/useAllItems';
 import "../styles/List.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import dummydata from "../components/items/dummydata";
 
 const ListContainer = () => {
   const { items } = useAllItems();
@@ -11,12 +11,12 @@ const ListContainer = () => {
   return (
     <div>
       <header id="top">
-        <Header />
+        <Nav />
       </header>
+      {items ? 
       <List items={items} />
-      <footer>
-        <Footer />
-      </footer>
+      : <List items={dummydata} />
+      }
     </div>
   );
 };

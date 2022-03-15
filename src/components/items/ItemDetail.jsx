@@ -11,7 +11,7 @@ const ItemDetail = () => {
 
   return (
     <>
-      <figure className="item-container">
+      <figure className="item-figure">
         <figcaption className="name">{item.title}</figcaption>
         <a href={item.website} alt={item.title}>
           <img src={item.logo} className="logo" alt={item.title} />

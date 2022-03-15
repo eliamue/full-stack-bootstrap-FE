@@ -1,0 +1,24 @@
+.about-container, .contact-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  color: white;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+#email-icon:hover, #portfolio-icon:hover, #linkedin-icon:hover, #github-icon:hover {
+    color: rgb(187, 187, 187) !important;
+}

@@ -1,21 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
 import "../styles/Nav.css";
 
-export default function Nav() {
-  return (
-    <div>
-      <section className="navlinks">
-        <Link className="nav-a" to="/">
-          Home
-        </Link>
-        <Link className="nav-a" to="/list">
-          List
-        </Link>
-        <Link className="nav-a" to="/about">
-          About
-        </Link>
-      </section>
-    </div>
-  );
+export default class Nav extends React.Component {
+  showSettings (event) {
+    event.preventDefault();
+  }
+
+  render () {
+
+    return (
+      <Menu width="25vmin">
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="list" className="menu-item" href="/list">List</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+      </Menu>
+    );
+  }
 }

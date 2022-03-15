@@ -6,7 +6,8 @@ const List = ({ items }) => {
   return (
     <div>
       <div className="main-container">
-        <ul aria-label="item-ul" className="item-ul">
+        <h1>List</h1>
+        <ul aria-label="item-ul" className="item-container">
           {items.map((item) => (
             <li className="item-li" id={item.id} key={item.id}>
                 <ListItem {...item} />

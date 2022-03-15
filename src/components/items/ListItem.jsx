@@ -1,16 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PropTypes } from 'prop-types';
+import { PropTypes } from "prop-types";
 
-const ListItem = ({
-  title,
-  logo,
-  id
-}) => (
-  <div className="item-container">
+const ListItem = ({ title, logo, id }) => (
+  <div>
     <h2 className="title">{title}</h2>
     <Link to={`/${id}`}>
-    <img src={logo} className="logo" alt={title} />
+      <img src={logo} className="logo" alt={title} />
     </Link>
   </div>
 );
