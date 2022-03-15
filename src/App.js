@@ -12,7 +12,7 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route exact path="/add" element={<Form />} />
           <Route exact path="/list" element={<ListContainer />} />
           <Route exact path="/:id" element={<DetailContainer />} />

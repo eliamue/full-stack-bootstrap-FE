@@ -1,6 +1,7 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import "../styles/Nav.css";
+import { Link } from 'react-router-dom';
 
 export default class Nav extends React.Component {
   showSettings (event) {
@@ -11,9 +12,9 @@ export default class Nav extends React.Component {
 
     return (
       <Menu width="25vmin">
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="list" className="menu-item" href="/list">List</a>
-        <a id="about" className="menu-item" href="/about">About</a>
+        <Link id="home" className="menu-item" to="/">Home</Link>
+        <Link id="list" className="menu-item" to="/list">List</Link>
+        <Link id="about" className="menu-item" to="/about">About</Link>
       </Menu>
     );
   }
