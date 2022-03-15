@@ -14,9 +14,9 @@ export default class Nav extends React.Component {
 
     return (
       <Menu width="25vmin">
-        <Link id="home" className="menu-item" to="/">Home</Link>
-        <Link id="list" className="menu-item" to="/list">List</Link>
-        <Link id="about" className="menu-item" to="/about">About</Link>
+        <Link id="home" className="menu-item" to={"/"}>Home</Link>
+        <Link id="list" className="menu-item" to={"/list"}>List</Link>
+        <Link id="about" className="menu-item" to={"/about"}>About</Link>
       </Menu>
     );
   }
