@@ -13,10 +13,10 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route exact path="/add" element={<Form />} />
-          <Route exact path="/list" element={<ListContainer />} />
+          <Route path="/add" element={<Form />} />
+          <Route path="/list" element={<ListContainer />} />
           <Route exact path="/:id" element={<DetailContainer />} />
-          <Route exact path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>

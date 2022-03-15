@@ -3,6 +3,8 @@ import { slide as Menu } from 'react-burger-menu';
 import "../styles/Nav.css";
 import { Link } from 'react-router-dom';
 
+
+
 export default class Nav extends React.Component {
   showSettings (event) {
     event.preventDefault();
