@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import dummydata from "../components/items/dummydata";
 
 const fetchDummyData = async (id) => {
-  const user = await dummydata.find(user => user.id === id);
-  return user;
+  const item = await dummydata.find(item => item.id === id);
+  return item;
 };
 
 export default function useDummyData(id) {
@@ -12,7 +12,7 @@ export default function useDummyData(id) {
 
   useEffect(() => {
     fetchDummyData(id)
-      .then((user) => setDumbObject(user))
+      .then((item) => setDumbObject(item))
       .finally(() => setloading(false));
   }, [id]);
 
