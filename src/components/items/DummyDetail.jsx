@@ -21,7 +21,7 @@ export default function DummyDetail() {
           />
         </a>
         <div className="textfield">{dumbObject.textfield}</div>
-        <div className="truthy">{dumbObject.truthy_thing ? <div>Truthy thing is true</div> : ""}</div>
+        <div className="truthy">{dumbObject.truthy_thing ? "Truthy thing is TRUE" : "Truthy thing is FALSE"}</div>
         <div className="number">{dumbObject.number_thing}</div>
       </figure>
       <HashLink to={"/list"}>Back to list</HashLink>
